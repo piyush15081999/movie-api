@@ -10,12 +10,30 @@ A RESTful API for searching movies, getting details, and discovering trending fi
 - Discover trending movies
 - Get movie recommendations
 
+## 🖥️ Frontend Features
+
+- **Beautiful UI**: Modern, responsive design
+- **Movie Search**: Search any movie by title
+- **Popular & Trending**: Browse popular and trending movies
+- **Movie Details**: Click any movie to see full details
+- **Responsive**: Works on desktop, tablet, and mobile
+
+## 🎯 How to Use
+
+1. **Browse**: Click "Popular" or "Trending" tabs to explore movies
+2. **Search**: Enter a movie name in the search box and click search
+3. **Details**: Click on any movie card to see full details, genres, and ratings
+4. **Close**: Click the × or outside the popup to close
+
 ## 🛠️ Technologies
 
 - Node.js
 - Express.js
 - TMDB API
 - Axios
+- index.html
+- style.css
+- script.js
 
 ## 📦 Installation
 
