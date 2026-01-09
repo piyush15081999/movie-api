@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎬 Movie Database</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>🎬 Movie Database</h1>
+            <p>Discover movies, search, and explore trending films</p>
+        </div>
+    </header>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-box">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="Search for movies... (e.g., Avatar, Batman)"
+                    autocomplete="off"
+                >
+                <button id="searchBtn">🔍 Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabs -->
+    <section class="tabs-section">
+        <div class="container">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="popular">🔥 Popular</button>
+                <button class="tab-btn" data-tab="trending">📈 Trending</button>
+                <button class="tab-btn" data-tab="search">🔍 Search Results</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Movies Grid -->
+    <section class="movies-section">
+        <div class="container">
+            <div id="loadingSpinner" class="loading">Loading movies...</div>
+            <div id="moviesGrid" class="movies-grid"></div>
+            <div id="errorMessage" class="error-message"></div>
+        </div>
+    </section>
+
+    <!-- Movie Details Modal -->
+    <div id="movieModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="movieDetails"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Built with ❤️ using TMDB API</p>
+            <p><a href="/api/movies/popular" target="_blank">View API Documentation</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

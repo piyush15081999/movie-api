@@ -5,6 +5,8 @@ const movieService = require('./movieService');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+// Serve static files from public folder
+app.use(express.static('public'));
 
 // Middleware
 app.use(cors());
